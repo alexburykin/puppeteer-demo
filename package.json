@@ -1,0 +1,19 @@
+{
+  "name": "puppeter-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha e2e/bootstrap.js --recursive e2e",
+    "server": "http-server src",
+    "test-vue": "npm run server && mocha e2e/vue.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "http-server": "^0.11.1",
+    "mocha": "^6.2.0",
+    "puppeteer": "^1.19.0"
+  }
+}
